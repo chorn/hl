@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="fZOIDeductor" name="Deductive Talent" description="Required Intellgence is 16.\nRequired Wisdom is 16.\n\nWhen you observe a player fail at a skill check, you deduce what they should have done, and can attempt to repeat that skill. The skill must be a single action. This can only be used within 10 minutes of observation, and does not represent a new permanent skill that the player has. \n\nIf the PC is making essentially the same check, for example an Athletics check to climb a wall, the PC may use their own proficiency bonus + Intelligence bonus + Wisdom bonus.\nIf the PC is making a similar check, for example an Animal Handling check to calm the second panicing horse, the PC may use their own proficiency bonus.\nIf the PC is making a crazy pants check, for example an Animal Handling check to calm a tiger after observing a check against a duck, the PC may use their own proficiency bonus - Intelligence bonus - Wisdom bonus." compset="Feat" uniqueness="useronce">
+    <usesource source="5eFeSkUACP" parent="p5eUneArc" name="5e Unearthed Arcana - Feats for Skills"/>
+    <tag group="Helper" tag="ShowSpec" name="Show Spec" abbrev="Show Spec"/>
+    <tag group="fCategory" tag="Custom"/>
+    </thing>
+  <thing id="srZOIDrow" name="Dark Elf Detective (Drow)" description="Drow, also known as dark elves, were a dark-skinned sub-race of elves that predominantly lived in the Underdark. They were generally evil. They were shorter than many other sub-races of elves and, in common with most Underdark-dwelling creatures, had a tremendous resistance to magic. They also had a much higher birthrate than most other elves, but strife tended to keep their numbers down.\n\nOn the surface, the drow were sometimes referred to as &quot;The Ones Who Went Below&quot;\n\nIn many ways, drow resembled eladrin. Drow had obsidian-colored skin and pale yellow (or pale golden), silver or white hair, the latter being by far the most common. This hair was carefully groomed and cared for by most drow and worn long with jewelry and other accessories decorating it. Like all elves, drow were incapable of growing beards, though many males were fond of long sideburns.\n\nDrow eyes were usually bright red, but some had different colored, often much paler eyes such as blue, lilac, pink, or silver. Sometimes a drow&apos;s eyes could even be green, which meant that that particular drow had some surface elven blood in their veins. They usually varied in height from 5&apos;4&quot; – 6&apos; (1.63 – 1.83 meters), and weighed from 130 – 175 lbs (59 to 79 kg) on average.\n\nDrow had lifespans far beyond those of humans and comparable with the rest of the elven race, although usually somewhat longer. This was, of course, presuming the drow didn&apos;t meet a premature and violent end, as many often did, but those that survived the trials of their society and the horrors of the Underdark could live for centuries, sometimes as long as 1000 years or more." compset="SubRace" uniqueness="unique">
+    <fieldval field="rLanguages" value="2"/>
+    <fieldval field="rHeightMin" value="54"/>
+    <fieldval field="rWeightMin" value="90"/>
+    <fieldval field="rINT" value="1"/>
+    <fieldval field="rWIS" value="1"/>
+    <usesource source="5ePHBCP" parent="p5ePack" name="5e Players Handbook"/>
+    <tag group="HeightDice" tag="2" name="2" abbrev="2"/>
+    <tag group="HeightSize" tag="10" name="d10" abbrev="d10"/>
+    <tag group="ClVaryName" tag="Replace" name="Replace" abbrev="Replace"/>
+    <tag group="SplAttr" tag="aINT" name="Intelligence" abbrev="Intelligence"/>
+    <tag group="SubRace" tag="rElf" name="Elf" abbrev="Elf"/>
+    <tag group="WeightDice" tag="1" name="1" abbrev="1"/>
+    <tag group="WeightSize" tag="4" name="d4" abbrev="d4"/>
+    <bootstrap thing="fZOIDeductor"></bootstrap>
+    <bootstrap thing="ra5CSunSen">
+      <assignval field="abText" value="Drow"/>
+      </bootstrap>
+    <bootstrap thing="raDarkVis">
+      <autotag group="Value" tag="120"/>
+      </bootstrap>
+    <bootstrap thing="lAWDrow"></bootstrap>
+    <bootstrap thing="lUndercomm"></bootstrap>
+    <autoadd thing="skInvestig"></autoadd>
+    <autoadd thing="skPercep"></autoadd>
+    </thing>
+  <thing id="srZOIGnoDet" name="Deep Gnome Detective (Svirfneblin)" description="Deep gnomes, called svirfneblin in their own language, are a gnome subrace that live in the Underdark. While their surface cousins are known for their boundless optimism and cheerful mischief, the svirfneblin are serious and suspicious creatures. They survive in the Underdark by maintaining wariness of others and working hard to keep their underground society secret.\n\nPhysical description\nDeep gnomes are wiry and lean with a body as hard as a slab of rock. Males are completely bald and beardless, while the females sport hair. Ranging from 3&apos; to 3&apos;6&quot; (107 cm) in height and weighing between 40 and 45 lbs (20.4 kg), the deep gnomes are small enough to give them a size advantage when battling larger opponents. Deep gnome complexions are sometimes described as &quot;gnarled&quot; and, like drow and duergar, are commonly dark in hue, with most deep gnomes demonstrating brown or gray skin, with dark gray eyes, as well as gray hair if female. Deep gnomes do not live quite as long as their kin, with a life expectancy just under two centuries. Due to this and a number of cultural affectations, deep gnome children are considered adults at roughly twenty years of age.\n\nAbilities\nDeep gnome are better adapted for underground living than either rock gnomes or forest gnomes, with darkvision to help them see where there is no light. Similarly, deep gnomes have a dwarven-like affinity for stone and innately understand it on a level few other races can appreciate. Deep gnomes also lack most gnomes&apos; predilection for cantrip like abilities but can instead blind other beings, obscure their own presence, or shapeshift. Deep gnomes also have a great deal of resistance to magic of any kind, and can go undetected as if they were using the nondetection spell, alongside their natural affinity for avoiding danger or hiding.\n\nDeep Gnome Feat\nIf your DM allows the use of feats, your deep gnome character has the option of taking the Svirfneblin Magic feat." compset="SubRace" summary="Deep gnomes, called svirfneblin in their own language, are a gnome subrace that live in the Underdark." uniqueness="unique">
+    <fieldval field="rWeightMin" value="80"/>
+    <fieldval field="rWIS" value="1"/>
+    <fieldval field="rLanguages" value="2"/>
+    <usesource source="5eSCAGCP" parent="p5eBooks" name="Sword Coast Adventures Guide - Beta"/>
+    <usesource source="5eEEPCCP" parent="p5ePOTA" name="Elemental Evil Player&apos;s Companion"/>
+    <tag group="SubRace" tag="rGnome" name="Gnome" abbrev="Gnome"/>
+    <tag group="Alignment" tag="NeutralGE" name="Neutral" abbrev="N"/>
+    <tag group="Alignment" tag="NeutralLC" name="Neutral" abbrev="N"/>
+    <tag group="ClVaryName" tag="Replace" name="Replace" abbrev="Replace"/>
+    <bootstrap thing="lUndercomm"></bootstrap>
+    <bootstrap thing="raDarkVis">
+      <autotag group="Value" tag="120"/>
+      </bootstrap>
+    <bootstrap thing="fZOIDeductor"></bootstrap>
+    <bootstrap thing="skInvestig"></bootstrap>
+    <bootstrap thing="skPercep"></bootstrap>
+    </thing>
+  </document>

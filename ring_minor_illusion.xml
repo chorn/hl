@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document signature="Hero Lab Data">
+  <thing id="irZOImi" name="Ring of Minor Illusion" description="While wearing this ring, you can cast the Minor Illusion spell from it as a bonus action at will." compset="Ring">
+    <tag group="DescInfo" tag="spMinorIllusion" name="Minor Illusion" abbrev="MinorIllusion"/>
+    <tag group="Helper" tag="NeedAttune" name="Requires Attunement" abbrev="Requires Attunement"/>
+    <tag group="Helper" tag="ShowSpec" name="Show Spec" abbrev="Show Spec"/>
+    <tag group="ItemRarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <bootstrap thing="spMinoIllu">
+      <autotag group="Helper" tag="ItemSpell"/>
+      <autotag group="Usage" tag="AtWill"/>
+      </bootstrap>
+    </thing>
+  <thing id="irZOIRingGuid" name="Ring of Guidance" description="While wearing this ring, you can cast the Guidance spell from it as a bonus action at will." compset="Ring">
+    <tag group="DescInfo" tag="spMinorIllusion" name="Minor Illusion" abbrev="MinorIllusion"/>
+    <tag group="Helper" tag="NeedAttune" name="Requires Attunement" abbrev="Requires Attunement"/>
+    <tag group="Helper" tag="ShowSpec" name="Show Spec" abbrev="Show Spec"/>
+    <tag group="ItemRarity" tag="Uncommon" name="Uncommon" abbrev="Uncommon"/>
+    <bootstrap thing="spGuidance"></bootstrap>
+    </thing>
+  </document>
